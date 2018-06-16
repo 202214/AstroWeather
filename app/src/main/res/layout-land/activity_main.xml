@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.liwocha.dawid.astroweather.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menuText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:text="MENU" />
+
+        <Button
+            android:id="@+id/weatherActivityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="50dp"
+            android:text="WEATHER"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:onClick="onWeatherActivityButtonClick"/>
+
+        <Button
+            android:id="@+id/astroActivityButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="50dp"
+            android:text="ASTRO"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:onClick="onAstroActivityButtonClick"/>
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="50dp"
+            android:text="ABOUT"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:onClick="onAboutButtonClick"/>
+
+        <Button
+            android:id="@+id/exitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="50dp"
+            android:text="EXIT"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:onClick="onExitButtonClick"/>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

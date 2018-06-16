@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Localization"
+        android:key="localization">
+
+        <EditTextPreference
+            android:key="add_localization"
+            android:title="Add localization"
+            android:summary="click to add new localization"
+            android:dialogTitle="Add localization"
+            android:defaultValue="Lodz, PL"
+            android:inputType="text"/>
+
+        <ListPreference
+            android:key="choose_localization"
+            android:title="Choose localization"
+            android:defaultValue="Lodz, Poland"
+            android:summary="Lodz, Poland" />
+
+        <ListPreference
+            android:key="delete_localization"
+            android:title="Delete localization"
+            android:defaultValue=" "
+            android:summary="Lodz, Poland" />
+
+        <EditTextPreference
+            android:key="longitude"
+            android:title="Longitude"
+            android:summary="0.0"
+            android:dialogTitle="Longitude"
+            android:defaultValue="0.0"
+            android:editable="false"/>
+
+        <EditTextPreference
+            android:key="latitude"
+            android:title="Latitude"
+            android:summary="0.0"
+            android:dialogTitle="Latitude"
+            android:defaultValue="0.0"
+            android:editable="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Time"
+        android:key="time">
+
+        <ListPreference
+            android:key="refresh_interval"
+            android:title="Refresh interval"
+            android:defaultValue="15"
+            android:entries="@array/listentries"
+            android:entryValues="@array/listvalues" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
